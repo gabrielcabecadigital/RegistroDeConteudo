@@ -16,7 +16,7 @@ namespace Conteudo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Categorias());
+            Application.Run(new Conteudos());
         }
     }
 }
