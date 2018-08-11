@@ -28,11 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnNovo = new MetroFramework.Controls.MetroButton();
+            this.dgvCategorias = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Location = new System.Drawing.Point(487, 24);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(75, 23);
+            this.btnNovo.TabIndex = 0;
+            this.btnNovo.Text = "Novo";
+            // 
+            // dgvCategorias
+            // 
+            this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategorias.Location = new System.Drawing.Point(24, 64);
+            this.dgvCategorias.Name = "dgvCategorias";
+            this.dgvCategorias.Size = new System.Drawing.Size(568, 213);
+            this.dgvCategorias.TabIndex = 1;
+            // 
+            // Categorias
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(615, 300);
+            this.Controls.Add(this.dgvCategorias);
+            this.Controls.Add(this.btnNovo);
+            this.Name = "Categorias";
             this.Text = "Categorias";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private MetroFramework.Controls.MetroButton btnNovo;
+        private System.Windows.Forms.DataGridView dgvCategorias;
     }
 }
