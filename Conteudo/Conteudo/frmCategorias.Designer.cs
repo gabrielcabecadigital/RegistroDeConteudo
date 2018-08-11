@@ -1,6 +1,6 @@
 ﻿namespace Conteudo
 {
-    partial class Categorias
+    partial class frmCategorias
     {
         /// <summary>
         /// Required designer variable.
@@ -35,11 +35,12 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(487, 24);
+            this.btnNovo.Location = new System.Drawing.Point(517, 26);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(75, 23);
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // dgvCategorias
             // 
