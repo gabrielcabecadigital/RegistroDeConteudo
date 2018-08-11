@@ -55,22 +55,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="Conteudo.cs">
       <SubType>Form</SubType>
     </Compile>
+
     <Compile Include="Conteudo.Designer.cs">
       <DependentUpon>Conteudo.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Conteudos.cs">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+
     <Compile Include="Conteudos.Designer.cs">
       <DependentUpon>Conteudos.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+
+    <Compile Include="Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+
+    <Compile Include="Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <EmbeddedResource Include="Conteudo.resx">
       <DependentUpon>Conteudo.cs</DependentUpon>
     </EmbeddedResource>
