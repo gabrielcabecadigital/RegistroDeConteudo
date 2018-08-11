@@ -40,11 +40,14 @@
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Compile Include="Categoria.cs" />
     <Compile Include="Conteudo.cs" />
     <Compile Include="Dao\CategoriaDao.cs" />
     <Compile Include="Dao\ConteudoDao.cs" />
   </ItemGroup>
+=======
+>>>>>>> Faby
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
