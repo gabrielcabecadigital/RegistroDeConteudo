@@ -56,7 +56,7 @@
             this.mtxtId.Name = "mtxtId";
             this.mtxtId.Size = new System.Drawing.Size(75, 23);
             this.mtxtId.TabIndex = 1;
-            this.mtxtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mtxtId_KeyDown);
+            this.mtxtId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxtId_KeyPress);
             // 
             // metroLabel2
             // 
@@ -71,7 +71,7 @@
             // 
             this.mtxtTitulo.Location = new System.Drawing.Point(71, 120);
             this.mtxtTitulo.Name = "mtxtTitulo";
-            this.mtxtTitulo.Size = new System.Drawing.Size(706, 23);
+            this.mtxtTitulo.Size = new System.Drawing.Size(539, 23);
             this.mtxtTitulo.TabIndex = 3;
             this.mtxtTitulo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mtxtTitulo_KeyDown);
             // 
@@ -107,41 +107,40 @@
             this.mtxtTexto.Location = new System.Drawing.Point(71, 197);
             this.mtxtTexto.Multiline = true;
             this.mtxtTexto.Name = "mtxtTexto";
-            this.mtxtTexto.Size = new System.Drawing.Size(706, 132);
+            this.mtxtTexto.Size = new System.Drawing.Size(539, 84);
             this.mtxtTexto.TabIndex = 7;
             // 
             // mbtnSalvar
             // 
-            this.mbtnSalvar.Location = new System.Drawing.Point(239, 404);
+            this.mbtnSalvar.Location = new System.Drawing.Point(160, 300);
             this.mbtnSalvar.Name = "mbtnSalvar";
-            this.mbtnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.mbtnSalvar.Size = new System.Drawing.Size(75, 27);
             this.mbtnSalvar.TabIndex = 8;
             this.mbtnSalvar.Text = "Salvar";
             this.mbtnSalvar.Click += new System.EventHandler(this.mbtnSalvar_Click);
             // 
             // mbtnSair
             // 
-            this.mbtnSair.Location = new System.Drawing.Point(503, 404);
+            this.mbtnSair.Location = new System.Drawing.Point(424, 300);
             this.mbtnSair.Name = "mbtnSair";
-            this.mbtnSair.Size = new System.Drawing.Size(75, 23);
+            this.mbtnSair.Size = new System.Drawing.Size(75, 27);
             this.mbtnSair.TabIndex = 10;
             this.mbtnSair.Text = "Sair";
             this.mbtnSair.Click += new System.EventHandler(this.mbtnSair_Click);
             // 
             // mbtnLimpar
             // 
-            this.mbtnLimpar.Location = new System.Drawing.Point(368, 404);
+            this.mbtnLimpar.Location = new System.Drawing.Point(289, 300);
             this.mbtnLimpar.Name = "mbtnLimpar";
-            this.mbtnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.mbtnLimpar.Size = new System.Drawing.Size(75, 27);
             this.mbtnLimpar.TabIndex = 9;
             this.mbtnLimpar.Text = "Limpar";
             this.mbtnLimpar.Click += new System.EventHandler(this.mbtnLimpar_Click);
             // 
             // frmCadastroConteudo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(653, 346);
             this.Controls.Add(this.mbtnLimpar);
             this.Controls.Add(this.mbtnSair);
             this.Controls.Add(this.mbtnSalvar);
@@ -153,9 +152,10 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.mtxtId);
             this.Controls.Add(this.metroLabel1);
+            this.KeyPreview = true;
             this.Name = "frmCadastroConteudo";
             this.Text = "Conteúdo";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroConteudo_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmCadastroConteudo_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
