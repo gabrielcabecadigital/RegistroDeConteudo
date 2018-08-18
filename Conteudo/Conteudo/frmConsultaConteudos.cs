@@ -11,11 +11,12 @@ using MetroFramework.Forms;
 
 namespace Conteudo
 {
-    public partial class Conteudo : MetroForm
+    public partial class frmConsultaConteudos : MetroForm
     {
-        public Conteudo()
+        public frmConsultaConteudos()
         {
             InitializeComponent();
         }
+
     }
 }
