@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categoria.cs" />
+    <Compile Include="Configuracao.cs" />
     <Compile Include="Conteudo.cs" />
     <Compile Include="Dao\CategoriaDao.cs" />
     <Compile Include="Dao\ConteudoDao.cs" />

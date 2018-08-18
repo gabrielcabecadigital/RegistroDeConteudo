@@ -11,12 +11,16 @@ namespace Conteudo
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
+        /// 
+
+
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCategorias());
+            Application.Run(new Configuracoes(0));
         }
     }
 }
