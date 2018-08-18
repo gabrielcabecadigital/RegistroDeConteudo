@@ -59,20 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conteudo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Conteudo.Designer.cs">
-      <DependentUpon>Conteudo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Conteudos.cs">
-      <SubType>Form</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="Conteudos.Designer.cs">
-      <DependentUpon>Conteudos.cs</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
     <Compile Include="Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,14 +71,25 @@
     <Compile Include="Categoria.Designer.cs">
       <DependentUpon>Categoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastroConteudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroConteudo.Designer.cs">
+      <DependentUpon>frmCadastroConteudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaConteudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaConteudos.Designer.cs">
+      <DependentUpon>frmConsultaConteudos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Conteudo.resx">
-      <DependentUpon>Conteudo.cs</DependentUpon>
+    <EmbeddedResource Include="frmCadastroConteudo.resx">
+      <DependentUpon>frmCadastroConteudo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Conteudos.resx">
-      <DependentUpon>Conteudos.cs</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <EmbeddedResource Include="frmConsultaConteudos.resx">
+      <DependentUpon>frmConsultaConteudos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

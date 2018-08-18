@@ -1,6 +1,6 @@
 ﻿namespace Conteudo
 {
-    partial class Conteudo
+    partial class frmCadastroConteudo
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,7 @@
             this.mtxtTexto = new MetroFramework.Controls.MetroTextBox();
             this.mbtnSalvar = new MetroFramework.Controls.MetroButton();
             this.mbtnSair = new MetroFramework.Controls.MetroButton();
+            this.mbtnLimpar = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -55,6 +56,7 @@
             this.mtxtId.Name = "mtxtId";
             this.mtxtId.Size = new System.Drawing.Size(75, 23);
             this.mtxtId.TabIndex = 1;
+            this.mtxtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mtxtId_KeyDown);
             // 
             // metroLabel2
             // 
@@ -71,6 +73,7 @@
             this.mtxtTitulo.Name = "mtxtTitulo";
             this.mtxtTitulo.Size = new System.Drawing.Size(706, 23);
             this.mtxtTitulo.TabIndex = 3;
+            this.mtxtTitulo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mtxtTitulo_KeyDown);
             // 
             // metroLabel3
             // 
@@ -114,20 +117,32 @@
             this.mbtnSalvar.Size = new System.Drawing.Size(75, 23);
             this.mbtnSalvar.TabIndex = 8;
             this.mbtnSalvar.Text = "Salvar";
+            this.mbtnSalvar.Click += new System.EventHandler(this.mbtnSalvar_Click);
             // 
             // mbtnSair
             // 
-            this.mbtnSair.Location = new System.Drawing.Point(416, 404);
+            this.mbtnSair.Location = new System.Drawing.Point(508, 404);
             this.mbtnSair.Name = "mbtnSair";
             this.mbtnSair.Size = new System.Drawing.Size(75, 23);
-            this.mbtnSair.TabIndex = 9;
+            this.mbtnSair.TabIndex = 10;
             this.mbtnSair.Text = "Sair";
+            this.mbtnSair.Click += new System.EventHandler(this.mbtnSair_Click);
             // 
-            // Conteudo
+            // mbtnLimpar
+            // 
+            this.mbtnLimpar.Location = new System.Drawing.Point(414, 404);
+            this.mbtnLimpar.Name = "mbtnLimpar";
+            this.mbtnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.mbtnLimpar.TabIndex = 9;
+            this.mbtnLimpar.Text = "Limpar";
+            this.mbtnLimpar.Click += new System.EventHandler(this.mbtnLimpar_Click);
+            // 
+            // frmCadastroConteudo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mbtnLimpar);
             this.Controls.Add(this.mbtnSair);
             this.Controls.Add(this.mbtnSalvar);
             this.Controls.Add(this.mtxtTexto);
@@ -138,8 +153,9 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.mtxtId);
             this.Controls.Add(this.metroLabel1);
-            this.Name = "Conteudo";
+            this.Name = "frmCadastroConteudo";
             this.Text = "Conteúdo";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroConteudo_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +173,6 @@
         private MetroFramework.Controls.MetroTextBox mtxtTexto;
         private MetroFramework.Controls.MetroButton mbtnSalvar;
         private MetroFramework.Controls.MetroButton mbtnSair;
+        private MetroFramework.Controls.MetroButton mbtnLimpar;
     }
 }
