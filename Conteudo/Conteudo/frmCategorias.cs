@@ -23,5 +23,10 @@ namespace Conteudo
             frmCategoria novo = new frmCategoria();
             novo.Show();
         }
+
+        private void frmCategorias_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
