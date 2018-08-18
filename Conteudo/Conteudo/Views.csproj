@@ -59,9 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="Categorias.cs">
-=======
+  
     <Compile Include="Conteudo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,8 +74,7 @@
       <DependentUpon>Conteudos.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="frmCategorias.cs">
->>>>>>> eduardo
+    <Compile Include="frmCategorias.cs"> 
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCategorias.Designer.cs">
@@ -102,11 +99,10 @@
       <DependentUpon>frmConsultaConteudos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
+    <Compile Include="Properties\AssemblyInfo.cs" /> 
     <EmbeddedResource Include="frmCadastroConteudo.resx">
-      <DependentUpon>frmCadastroConteudo.cs</DependentUpon>
-=======
+      <DependentUpon>frmCadastroConteudo.cs</DependentUpon> 
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,8 +110,7 @@
       <DependentUpon>frmCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Conteudo.resx">
-      <DependentUpon>Conteudo.cs</DependentUpon>
->>>>>>> eduardo
+      <DependentUpon>Conteudo.cs</DependentUpon> 
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaConteudos.resx">
       <DependentUpon>frmConsultaConteudos.cs</DependentUpon>
