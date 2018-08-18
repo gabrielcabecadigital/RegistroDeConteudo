@@ -1,6 +1,6 @@
 ﻿namespace Conteudo
 {
-    partial class Categoria
+    partial class frmCategoria
     {
         /// <summary>
         /// Required designer variable.
@@ -59,6 +59,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(75, 23);
             this.txtCodigo.TabIndex = 2;
+            this.txtCodigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodigo_KeyDown);
             // 
             // txtCategoria
             // 
@@ -66,6 +67,7 @@
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(262, 23);
             this.txtCategoria.TabIndex = 3;
+            this.txtCategoria.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCategoria_KeyDown);
             // 
             // btnSalvar
             // 
@@ -75,7 +77,7 @@
             this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             // 
-            // Categoria
+            // frmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -85,8 +87,9 @@
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Name = "Categoria";
+            this.Name = "frmCategoria";
             this.Text = "Categoria";
+            this.Load += new System.EventHandler(this.Categoria_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
