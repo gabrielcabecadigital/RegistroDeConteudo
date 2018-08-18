@@ -59,17 +59,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Categorias.cs">
+=======
+    <Compile Include="Conteudo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Categorias.Designer.cs">
-      <DependentUpon>Categorias.cs</DependentUpon>
+    <Compile Include="Conteudo.Designer.cs">
+      <DependentUpon>Conteudo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Categoria.cs">
+    <Compile Include="Conteudos.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Conteudos.Designer.cs">
+      <DependentUpon>Conteudos.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmCategorias.cs">
+>>>>>>> eduardo
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Categoria.Designer.cs">
-      <DependentUpon>Categoria.cs</DependentUpon>
+    <Compile Include="frmCategorias.Designer.cs">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCadastroConteudo.cs">
       <SubType>Form</SubType>
@@ -85,8 +103,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="frmCadastroConteudo.resx">
       <DependentUpon>frmCadastroConteudo.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategorias.resx">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conteudo.resx">
+      <DependentUpon>Conteudo.cs</DependentUpon>
+>>>>>>> eduardo
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaConteudos.resx">
       <DependentUpon>frmConsultaConteudos.cs</DependentUpon>
