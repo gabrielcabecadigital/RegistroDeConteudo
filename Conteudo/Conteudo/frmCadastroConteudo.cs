@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
 using Models;
+using Newtonsoft.Json;
 
 namespace Conteudo
 {
@@ -40,7 +42,16 @@ namespace Conteudo
             conteudo.Id = Convert.ToInt32(mtxtId.Text);
             conteudo.Titulo = mtxtTitulo.Text;
             conteudo.IdCat = Convert.ToInt32(mcbxCategoria.Text);
-            conteudo.Texto = mtxtTexto.Text;     
+            conteudo.Texto = mtxtTexto.Text;
+
+            string caminho = Path.Combine(Application.StartupPath, "config");
+            if (Directory.Exists(caminho))
+                Directory.CreateDirectory(caminho);
+            caminho = Path.Combine(caminho, "configuracao.txt");
+            string json = JsonConvert.SerializeObject(conteudo);
+            var base64 = System.Text.Encoding.UTF8.GetBytes(json);
+            json = System.Convert.ToBase64String(base64);
+            File.WriteAllText(caminho, json);
         }
 
         private void mtxtId_KeyDown(object sender, KeyEventArgs e)

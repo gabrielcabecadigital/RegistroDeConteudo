@@ -112,7 +112,7 @@
             // 
             // mbtnSalvar
             // 
-            this.mbtnSalvar.Location = new System.Drawing.Point(322, 404);
+            this.mbtnSalvar.Location = new System.Drawing.Point(239, 404);
             this.mbtnSalvar.Name = "mbtnSalvar";
             this.mbtnSalvar.Size = new System.Drawing.Size(75, 23);
             this.mbtnSalvar.TabIndex = 8;
@@ -121,7 +121,7 @@
             // 
             // mbtnSair
             // 
-            this.mbtnSair.Location = new System.Drawing.Point(508, 404);
+            this.mbtnSair.Location = new System.Drawing.Point(503, 404);
             this.mbtnSair.Name = "mbtnSair";
             this.mbtnSair.Size = new System.Drawing.Size(75, 23);
             this.mbtnSair.TabIndex = 10;
@@ -130,7 +130,7 @@
             // 
             // mbtnLimpar
             // 
-            this.mbtnLimpar.Location = new System.Drawing.Point(414, 404);
+            this.mbtnLimpar.Location = new System.Drawing.Point(368, 404);
             this.mbtnLimpar.Name = "mbtnLimpar";
             this.mbtnLimpar.Size = new System.Drawing.Size(75, 23);
             this.mbtnLimpar.TabIndex = 9;
