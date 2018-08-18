@@ -196,6 +196,7 @@ namespace Conteudo
             }
             catch
             {
+
                 item.Data = default(DateTime);
             }
             item.informacao = informacao.Text;
