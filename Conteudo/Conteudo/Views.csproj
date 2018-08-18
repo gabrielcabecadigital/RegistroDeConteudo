@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracoes.Designer.cs">
+      <DependentUpon>Configuracoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,14 +83,11 @@
     <Compile Include="frmCadastroConteudo.Designer.cs">
       <DependentUpon>frmCadastroConteudo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultaConteudos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmConsultaConteudos.Designer.cs">
-      <DependentUpon>frmConsultaConteudos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Configuracoes.resx">
+      <DependentUpon>Configuracoes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
