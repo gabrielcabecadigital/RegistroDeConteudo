@@ -50,15 +50,16 @@
             this.dgvCategorias.Size = new System.Drawing.Size(568, 213);
             this.dgvCategorias.TabIndex = 1;
             // 
-            // Categorias
+            // frmCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 300);
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.btnNovo);
-            this.Name = "Categorias";
+            this.Name = "frmCategorias";
             this.Text = "Categorias";
+            this.Load += new System.EventHandler(this.frmCategorias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
             this.ResumeLayout(false);
 
