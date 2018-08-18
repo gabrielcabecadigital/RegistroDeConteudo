@@ -59,7 +59,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(75, 23);
             this.txtCodigo.TabIndex = 2;
-            this.txtCodigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodigo_KeyDown);
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // txtCategoria
             // 
@@ -76,6 +76,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // frmCategoria
             // 
@@ -87,6 +88,7 @@
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
+            this.KeyPreview = true;
             this.Name = "frmCategoria";
             this.Text = "Categoria";
             this.Load += new System.EventHandler(this.Categoria_Load);
