@@ -18,5 +18,15 @@ namespace Conteudo
             InitializeComponent();
         }
 
+        private void mbtnNovo_Click(object sender, EventArgs e)
+        {
+            frmCadastroConteudo novoform = new frmCadastroConteudo();
+            novoform.Show();
+        }
+
+        private void mbtnSair_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

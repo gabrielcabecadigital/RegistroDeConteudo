@@ -20,7 +20,7 @@ namespace Conteudo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Configuracoes(0));
+            Application.Run(new frmConsultaConteudos());
         }
     }
 }
