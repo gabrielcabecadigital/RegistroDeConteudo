@@ -17,6 +17,7 @@ namespace Conteudo
     {
         BindingList<Configuracao> lista = new BindingList<Configuracao>();
         string arquivo = "eduardo.txt";
+        //ignorei mesmo
         string pasta = "arquivos";
         int IdEditar { get; set; } = -1;
 
