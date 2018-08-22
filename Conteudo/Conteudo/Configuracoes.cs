@@ -18,7 +18,7 @@ namespace Conteudo
         BindingList<Configuracao> lista = new BindingList<Configuracao>();
         string arquivo = "diferente.txt";
         //ignorei mesmo
-        string pasta = "oquevcquiser";
+        string pasta = "temporario";
         int IdEditar { get; set; } = -1;
 
         public Configuracoes(int id)
@@ -27,7 +27,7 @@ namespace Conteudo
             InitializeComponent(); 
         }
 
-        public Configuracoes():this(-1)
+        public Configuracoes():this(-10)
         { 
         }
 
@@ -54,8 +54,7 @@ namespace Conteudo
 
         private void ResetTabela()
         {
-            tabela.Columns.Clear();
-            tabela.Columns[0];
+            tabela.Columns.Clear(); 
         }
 
         private void CarregaBotoesTabela()
@@ -69,7 +68,7 @@ namespace Conteudo
 
             DataGridViewButtonColumn excluir = new DataGridViewButtonColumn()
             { 
-                Text = "Deletar",
+                Text = "Excluir",
                 UseColumnTextForButtonValue = true
             };
             tabela.Columns.Add(excluir);
