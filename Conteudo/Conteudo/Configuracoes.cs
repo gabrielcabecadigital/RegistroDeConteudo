@@ -16,9 +16,9 @@ namespace Conteudo
     public partial class Configuracoes : Form
     {
         BindingList<Configuracao> lista = new BindingList<Configuracao>();
-        string arquivo = "eduardo.txt";
+        string arquivo = "diferente.txt";
         //ignorei mesmo
-        string pasta = "arquivos";
+        string pasta = "oquevcquiser";
         int IdEditar { get; set; } = -1;
 
         public Configuracoes(int id)
@@ -54,7 +54,8 @@ namespace Conteudo
 
         private void ResetTabela()
         {
-            tabela.Columns.Clear(); 
+            tabela.Columns.Clear();
+            tabela.Columns[0];
         }
 
         private void CarregaBotoesTabela()
@@ -68,7 +69,7 @@ namespace Conteudo
 
             DataGridViewButtonColumn excluir = new DataGridViewButtonColumn()
             { 
-                Text = "Excluir",
+                Text = "Deletar",
                 UseColumnTextForButtonValue = true
             };
             tabela.Columns.Add(excluir);
