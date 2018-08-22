@@ -16,7 +16,7 @@ namespace Conteudo
     public partial class Configuracoes : Form
     {
         BindingList<Configuracao> lista = new BindingList<Configuracao>();
-        string arquivo = "configuracoes.txt";
+        string arquivo = "Faby.txt";
         string pasta = "arquivos";
         int IdEditar { get; set; } = -1;
 
